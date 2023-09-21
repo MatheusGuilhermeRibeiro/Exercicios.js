@@ -6,4 +6,4 @@ const StringdeNumeros = "7890";
 const citacao = "Meu nome é ";
 const meuNome= "Matheus";
 
-consogitle.log(citacao + meuNome)
+console.log(citacao + meuNome)
