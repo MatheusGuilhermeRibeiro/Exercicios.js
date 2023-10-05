@@ -1,7 +1,8 @@
 // Escreva um programa que mostre na tela a seguinte contagem:
     // 6 7 8 9 10 11 Acabou!
-var numero;
-for (numero  = 6; numero <= 11; numero++) {
+var numero = 6;
+while (numero <=  11){
     console.log(numero);
+    numero ++;
 };
-console.log("Acabou!")
+console.log("Acabou!");
