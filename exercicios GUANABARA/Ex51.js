@@ -4,24 +4,24 @@
 const prompt = require('prompt');
 prompt.start();
 let contador = 1
-let preco,menor,maior;
+let menor,maior;
 
 function lerpreco() {
     prompt.get(["preco"], function (err, result) {
-       preco = parseFloat(result.preco);
+       let preco = parseFloat(result.preco);
         console.log("R$"+preco)
         if (preco > maior || maior === undefined) {
             maior = preco;
-        }
+        };
         if (preco < menor || menor === undefined) {
             menor = preco;
-        }
+        };
         contador++
         if (contador <= 8) {
             lerpreco()
         } else {
             mostrarResultado()
-        }
+        };
     })
 }
 function mostrarResultado() {
