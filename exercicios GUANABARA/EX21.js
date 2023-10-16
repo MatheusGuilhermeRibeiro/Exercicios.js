@@ -5,11 +5,9 @@ console.log("---------------------------------------");
 const prompt = require('prompt');
 prompt.start();
 prompt.get(["ano"], function (err, result) {
-    const ano = parseFloat(result.ano);
-    const bissexto = ano % 4;
-    if (bissexto === 0) {
-        console.log("O ano de",ano,"é Bissexto");
+    if (parseFloat(result.ano) % 4 === 0) {
+        console.log("O ano de",parseFloat(result.ano),"é Bissexto");
     } else {
-        console.log("O ano de",ano,"não é Bissexto");
+        console.log("O ano de",parseFloat(result.ano),"não é Bissexto");
     }
 });

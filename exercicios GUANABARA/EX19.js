@@ -7,9 +7,7 @@ console.log("----------------------");
 const prompt = require('prompt');
 prompt.start();
 prompt.get(["nota1","nota2"], function (err, result) {
-   const nota1 = parseFloat(result.nota1);
-   const nota2 = parseFloat(result.nota2);
-   const media = (nota1 + nota2) / 2;
+   const media = ( parseFloat(result.nota1) + parseFloat(result.nota2)) / 2;
    if (media >= 7) {
        console.log("Sua média foi",media,"parabéns você esta acima da média!!!");
    } else {

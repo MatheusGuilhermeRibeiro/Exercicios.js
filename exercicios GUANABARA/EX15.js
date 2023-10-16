@@ -1,5 +1,5 @@
 // Crie um programa que leia o número de dias trabalhados em um mês e mostre o
-// salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada sabendo-se que, o mes tem 31 dias e trabalhamos 8 horas por dia não considerando finais de semana.
+// salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada sabendo-se que, o mes tem 31 dias e trabalhamos 8 horas por dia não considerando finais de semana.  (OBS CONSIDERAR Q ELE nÃO TRABALHA FDS E O MAXIMO É 22 DIAS FAZER UMA CONDICIONAL PARA TAL)
 const prompt = require('prompt');
 prompt.start();
 prompt.get(["dias"], function (err, result) {
