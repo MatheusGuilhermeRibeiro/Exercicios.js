@@ -1,8 +1,6 @@
 // Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
 // guarde esses dados em três vetores. No final, mostre uma listagem contendo
 // apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
-
-
 console.log("Informe seu nome, sexo e salário")
 console.log("Para informar seu sexo [ 1 ] MASCULINO [ 2 ] FEMININO");
 const prompt = require("prompt");
@@ -18,7 +16,7 @@ function lerDados() {
         nomes.push(nome);
         sexos.push(sexo);
         salarios.push(salario);
-        if (nomes.length < 3) {
+        if (nomes.length < 5) {
             lerDados();
         } else {
             mostrarMaior5Mil();
